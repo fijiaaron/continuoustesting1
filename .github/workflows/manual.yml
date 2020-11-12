@@ -9,7 +9,7 @@ jobs:
 
     steps: 
       - uses: actions/checkout@v2
-      - uses: actoins/setup-node@master
+      - uses: actions/setup-node@master
         with: node-version: 12
 
       - name: run a script
