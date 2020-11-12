@@ -18,6 +18,12 @@ jobs:
       run: npm ci
     - name: build node.js project
       run: npm run build
-    - run: npm test 
+    - run: npm test > test-results.log
+    - name: upload test results
+      uses: actions/upload-artifact@v1
+      with: 
+        name: test-results
+        path: test-results.log
+
             
 
