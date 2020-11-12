@@ -31,3 +31,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Add my own custom step
+      - name: Add another step
+        run: echo "Added my own custom step"
