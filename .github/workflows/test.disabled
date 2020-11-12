@@ -15,10 +15,10 @@ jobs:
         node-version: '12'
     - name: run a script
       run: echo running a script
-    # - name: setup node.js project
-    #   run: npm ci
-    # - name: build node.js project
-    #   run: npm run build
-    # - run: npm test 
+    - name: setup node.js project
+      run: npm ci
+    - name: build node.js project
+      run: npm run build
+    - run: npm test 
             
 
