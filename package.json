@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "echo nothing to build yet",
-    "test": "mocha"
+    "test": "mocha | tee output/test-results"
   },
   "repository": {
     "type": "git",
