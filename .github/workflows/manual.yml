@@ -1,0 +1,23 @@
+name: manual step
+
+on: 
+  [workflow_dispatch]
+
+jobs:
+  jobname:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - uses: actions/checkout@v2
+      - uses: actoins/setup-node@master
+        with: node-version: 12
+
+      - name: run a script
+        run: echo running a script
+      - name: setup node.js project
+        run: npm ci
+      - name: build node.js project
+        run: npm run build
+      - run: npm test 
+            
+
