@@ -37,8 +37,8 @@ jobs:
         run: echo "Added my own custom step"
 
       # Cause a failure
-      - name: Cause a failure
-        run: |
-          echo "This should fail"
-          exit 1
+      # - name: Cause a failure
+      #   run: |
+      #     echo "This should fail"
+      #     exit 1
 
